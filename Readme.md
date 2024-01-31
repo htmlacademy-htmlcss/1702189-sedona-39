@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Катя Одинцова](https://up.htmlacademy.ru/htmlcss/39/user/1702189).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
