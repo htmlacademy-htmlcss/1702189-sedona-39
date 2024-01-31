@@ -2,6 +2,7 @@
 
 * Студент: [Катя Одинцова](https://up.htmlacademy.ru/htmlcss/39/user/1702189).
 * Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
+* Сайт: [Мой проект Седона](https://ekaterinaodints.github.io/1702189-sedona-39/).
 
 ---
 
