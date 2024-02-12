@@ -6,7 +6,7 @@
     <title>Каталог</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="logo" href="index.html"><img src="#" alt="Логотип Седоны"></a>
       <nav class="header-navigation">
         <ul class="navigation-list">
@@ -22,7 +22,7 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <button class="button" type="button"><span class="visually-hidden">Поиск</span></button>
+            <button class="button" type="button" data-test="search"><span class="visually-hidden">Поиск</span></button>
           </li>
           <li class="navigation-item">
             <button class="button" type="button"><span class="visually-hidden">Избранное</span></button>
@@ -31,7 +31,7 @@
         <button class="button" type="button">Хочу сюда!</button>
       </nav>
     </header>
-    <main class="main-catalog">
+    <main class="main-catalog" data-test="main">
       <header class="catalog-header">
         <h1>Гостиницы Седоны</h1>
         <ol class="breadcrumbs-list">
@@ -45,7 +45,7 @@
           </li>
         </ol>
       </header>
-      <section class="catalog-filter">
+      <section class="catalog-filter" data-test="filter">
         <form action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter-group">
             <legend class="filter-name">Инфраструктура:</legend>
@@ -125,7 +125,7 @@
             </a>
           </li>
         </ul>
-        <ul class="product-list">
+        <ul class="product-list" data-test="catalog">
           <li class="product-item">
             <img src="#" alt="Amara Resort & Spa">
             <h2>Amara Resort & Spa</h2>
@@ -184,7 +184,7 @@
           </li>
         </ol>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -194,7 +194,7 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
