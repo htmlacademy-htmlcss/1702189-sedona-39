@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="page-header" data-test="header">
@@ -22,10 +23,14 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <button class="button" type="button" data-test="search"><span class="visually-hidden">Поиск</span></button>
+            <button class="button" type="button" data-test="search">
+              <span class="visually-hidden">Поиск</span>
+            </button>
           </li>
           <li class="navigation-item">
-            <button class="button" type="button"><span class="visually-hidden">Избранное</span></button>
+            <button class="button" type="button">
+              <span class="visually-hidden">Избранное</span>
+            </button>
           </li>
         </ul>
         <button class="button" type="button">Хочу сюда!</button>
@@ -95,6 +100,15 @@
           </fieldset>
           <fieldset class="filter-group">
             <legend class="filter-name">Стоимость, ₽:</legend>
+            <label>
+              <input type="number">
+              от
+            </label>
+            <label>
+              <input type="number">
+              до
+            </label>
+            <input type="range" min="0" max="10000">
           </fieldset>
           <button class="button" type="submit">
             Применить
@@ -127,30 +141,30 @@
         </ul>
         <ul class="product-list" data-test="catalog">
           <li class="product-item">
-            <img src="images/hotels/hotel-amara.jpg" alt="Amara Resort & Spa" width="300" height="212">
+            <img src="images/catalog/hotels/hotel-amara.jpg" alt="Amara Resort & Spa" width="300" height="212">
             <h2>Amara Resort & Spa</h2>
             <p>Гостиница</p>
             <p>От 4000 ₽</p>
-            <button>Подробнее</button>
-            <button>В избранное</button>
+            <a href="#">Подробнее</a>
+            <button type="button">В избранное</button>
             <p>Рейтинг: 8,5</p>
           </li>
           <li class="product-item">
-            <img src="images/hotels/hotel-villas.jpg" alt="Villas at Poco Diablo" width="300" height="212">
+            <img src="images/catalog/hotels/hotel-villas.jpg" alt="Villas at Poco Diablo" width="300" height="212">
             <h2>Villas at Poco Diablo</h2>
             <p>Гостиница</p>
             <p>От 5000 ₽</p>
-            <button>Подробнее</button>
-            <button>В избранном</button>
+            <a href="#">Подробнее</a>
+            <button type="button">В избранном</button>
             <p>Рейтинг: 9,2</p>
           </li>
           <li class="product-item">
-            <img src="images/hotels/hotel-desert.jpg" alt="Desert Quail Inn" width="300" height="212">
+            <img src="images/catalog/hotels/hotel-desert.jpg" alt="Desert Quail Inn" width="300" height="212">
             <h2>Desert Quail Inn</h2>
             <p>Гостиница</p>
             <p>От 2500 ₽</p>
-            <button>Подробнее</button>
-            <button>В избранное</button>
+            <a href="#">Подробнее</a>
+            <button type="button">В избранное</button>
             <p>Рейтинг: 6,9</p>
           </li>
           <li class="product-item">
@@ -158,8 +172,8 @@
             <h2>GreenTree Inn</h2>
             <p>Гостиница</p>
             <p>От 1500 ₽</p>
-            <button>Подробнее</button>
-            <button>В избранное</button>
+            <a href="#">Подробнее</a>
+            <button type="button">В избранное</button>
             <p>Рейтинг: 5,0</p>
           </li>
         </ul>
@@ -177,7 +191,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <p class="pagination-link">...</p>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -198,17 +212,17 @@
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
+            <span class="visually-hidden">Vkontakte</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
+            <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>

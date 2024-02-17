@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="page-header" data-test="header">
@@ -22,20 +23,23 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <button class="button" type="button" data-test="search"><span class="visually-hidden">Поиск</span></button>
+            <button class="button" type="button" data-test="search">
+              <span class="visually-hidden">Поиск</span>
+            </button>
           </li>
           <li class="navigation-item">
-            <button class="button" type="button"><span class="visually-hidden">Избранное</span></button>
+            <button class="button" type="button">
+              <span class="visually-hidden">Избранное</span>
+            </button>
           </li>
         </ul>
         <button class="button" type="button">Хочу сюда!</button>
       </nav>
     </header>
     <main class="main-index" data-test="main">
-      <h1 class="visually-hidden">Седона</h1>
       <section class="hero" data-test="hero">
-        <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <img class="hero-img" src="images/welcome.svg" alt="Добро пожаловать в прекрасную Седону!" width="458" height="352">
+        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+        <img class="hero-img" src="images/index/welcome.svg" alt="Добро пожаловать в прекрасную Седону!" width="458" height="352">
       </section>
       <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -44,7 +48,7 @@
         <article class="advantages-item">
           <h3 class="advantages-item-title">Настоящий городок</h3>
           <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img class="advantages-image" src="images/advantages-1.jpg" alt="Улицы Седоны" width="800" height="385">
+          <img class="advantages-image" src="images/index/advantages-street.jpg" alt="Улицы Седоны" width="800" height="385">
         </article>
         <article class="advantages-item">
           <h3 class="advantages-item-title">Небольшая площадь</h3>
@@ -59,7 +63,7 @@
           <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
         </article>
         <article class="advantages-item">
-          <img class="advantages-image" src="images/advantages-2.jpg" alt="Мост дьявола" width="800" height="385">
+          <img class="advantages-image" src="images/index/advantages-rock.jpg" alt="Мост дьявола" width="800" height="385">
           <h3 class="advantages-item-title">Там есть мост дьявола</h3>
           <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </article>
@@ -93,8 +97,10 @@
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="subscribe-email">Email</label>
-          <input class="subscribe-field" id="subscribe-email" name="subscribe-email" type="email" placeholder="Ваш e-mail" required>
+          <label>
+            <span class="visually-hidden">Email</span>
+            <input class="subscribe-field" name="subscribe-email" type="email" placeholder="Ваш e-mail" required>
+          </label>
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -103,17 +109,17 @@
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
+            <span class="visually-hidden">Vkontakte</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
+            <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
