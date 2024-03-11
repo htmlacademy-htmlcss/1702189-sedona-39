@@ -21,10 +21,9 @@
               <a class="navigation-link" href="#">О Cедоне</a>
             </li>
             <li class="navigation-list-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link active" href="#">Гостиницы</a>
             </li>
           </ul>
-          <div class="navigation-wrap">
             <ul class="navigation-user list-reset">
               <li class="navigation-user-item">
                 <button class="navigation-user-button search-button" type="button" data-test="search">
@@ -38,7 +37,6 @@
               </li>
             </ul>
             <button class="button order-button" type="button">Хочу сюда!</button>
-          </div>
         </nav>
       </header>
       <main class="main-container main-catalog" data-test="main">
@@ -46,7 +44,7 @@
           <h1 class="catalog-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs-list list-reset">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
+              <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
@@ -101,7 +99,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-group">
+            <fieldset class="filter-group filter-price">
               <legend class="filter-name">Стоимость, ₽:</legend>
               <label>
                 <input class="range-number" type="number" placeholder="0">
@@ -231,7 +229,7 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label>
+            <label class="subscribe-label">
               <span class="visually-hidden">Email</span>
               <input class="subscribe-field" name="subscribe-email" type="email" placeholder="Ваш e-mail" required>
             </label>
