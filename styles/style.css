@@ -550,7 +550,7 @@ body {
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 284px;
+  max-width: 141px;
 }
 
 .social-link {
@@ -1036,6 +1036,7 @@ body {
     "type  price"
     "more  favorites"
     "stars rating";
+  grid-template-rows: 1fr auto auto auto;
   min-width: 300px;
   padding: 20px;
   column-gap: 20px;
@@ -1583,7 +1584,6 @@ body {
 }
 
 .field:disabled,
-.modal-input:disabled,
-.filter-input:disabled {
+.modal-input:disabled {
   background-color: #adb5bd;
 }

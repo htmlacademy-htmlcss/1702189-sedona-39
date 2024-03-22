@@ -41,7 +41,7 @@
         </nav>
       </header>
       <main class="main-container main-catalog" data-test="main">
-        <header class="catalog-header"  data-test="filter">
+        <header class="catalog-header">
           <h1 class="catalog-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs-list list-reset">
             <li class="breadcrumbs-item">
@@ -53,7 +53,7 @@
               <a class="breadcrumbs-link active" href="#">Гостиницы</a>
             </li>
           </ol>
-          <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <fieldset class="filter-group">
               <legend class="filter-name">Инфраструктура:</legend>
               <ul class="filter-list list-reset">
@@ -120,8 +120,12 @@
               </div>
               <div class="range-scale">
                 <div class="range-bar" style="left: 0; width: 226px">
-                  <button class="range-toggle-button" type="button"></button>
-                  <button class="range-toggle-button" type="button"></button>
+                  <button class="range-toggle-button" type="button">
+                    <span class="visually-hidden">Изменить минимальную стоимость</span>
+                  </button>
+                  <button class="range-toggle-button" type="button">
+                    <span class="visually-hidden">Изменить макимальную стоимость</span>
+                  </button>
                 </div>
               </div>
             </fieldset>
@@ -135,7 +139,7 @@
             </div>
           </form>
         </header>
-        <section class="catalog-sorting">
+        <section class="catalog-sorting" data-test="catalog">
           <div class="catalog-sorting-wrap">
             <p class="catalog-sorting-results">Найдено гостиниц: 38</p>
             <select class="catalog-sorting-select" aria-label="Сортировка">
@@ -160,7 +164,7 @@
               </li>
             </ul>
           </div>
-          <ul class="product-list list-reset" data-test="catalog">
+          <ul class="product-list list-reset">
             <li class="product-item">
               <a class="product-item-link" href="#">
                 <img class="product-item-image" src="images/catalog/hotels/hotel-amara.jpg" alt="Amara Resort & Spa" width="300" height="212">
